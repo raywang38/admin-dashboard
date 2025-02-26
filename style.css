@@ -25,6 +25,11 @@ a {
     border: none;
 }
 
+.nav,
+.nav * {
+    border: none;
+}
+
 /* dashboard */
 
 .dashboard {
@@ -43,6 +48,7 @@ a {
     grid-template-columns: 5fr 3fr;
     color: black;
     align-items: center;
+    background-color: rgb(208, 253, 238);
 }
 
 .searchbar {
@@ -73,7 +79,7 @@ a {
 
 .profile {
     grid-column: 2 / 3;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 700;
     display: flex;
     justify-content: flex-end;
@@ -160,6 +166,7 @@ a {
     display: grid;
     grid-template-columns: 5fr 3fr;
     align-items: center;
+    background-color: rgb(208, 253, 238);
 }
 
 .welcome {
@@ -168,16 +175,30 @@ a {
     align-items: center;
     font-size: 2rem;
     font-weight: 600;
+    margin-left: 2rem;
+}
+
+.welcome > div {
+    margin-left: 1rem;
+}
+
+.welcome > div::first-line {
+    font-size: 1rem;
 }
 
 .welcome > img {
     height: 5rem;
 }
 
+.nav-buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 .nav-buttons > button {
     background-color: rgb(53,149,210);
     color: white;
-    padding: 1rem;
+    padding: 0.75rem 2rem;
     border: none;
     border-radius: 2rem;
     font-size: 1.25rem;
@@ -185,3 +206,7 @@ a {
 }
 
 /* hero */
+
+.hero {
+    background-color: rgb(226,232,240);
+}
